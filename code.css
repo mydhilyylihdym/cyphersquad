@@ -1,0 +1,406 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif; /* Child-friendly, modern font */
+    margin: 0;
+    padding: 0;
+    background-color: #f7f6ef; /* Light background from the color palette */
+    color: #443f35; /* Darker text color for readability */
+}
+
+header {
+    background-color: #fad353;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #443f35;
+    font-weight: bold;
+}
+
+/* Main Section Styles */
+main {
+    padding: 40px;
+}
+
+#intro {
+    text-align: center;
+}
+
+#intro h1 {
+    font-size: 2.5rem;
+    color: #443f35;
+}
+
+#intro img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-top: 20px;
+}
+
+#games {
+    margin-top: 50px;
+}
+
+#games h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: #443f35;
+}
+
+.game-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.game-card {
+    background-color: #f3e6b8;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.game-card i {
+    font-size: 3rem;
+    color: #a78b80;
+}
+
+.game-card h3 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+
+.game-card p {
+    font-size: 1rem;
+    color: #443f35;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #443f35;
+    color: #fad353;
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .game-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .game-card {
+        width: 80%;
+    }
+}
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F7F6EF;
+    color: #443F35;
+}
+
+.games-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #443F35;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    color: #A78B80;
+    margin-bottom: 2rem;
+}
+
+.plans {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.plan {
+    background-color: #F3E6B8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.plan:hover {
+    transform: translateY(-10px);
+}
+
+.plan h3 {
+    font-size: 1.8rem;
+    color: #443F35;
+    margin-bottom: 1rem;
+}
+
+.plan p {
+    font-size: 1rem;
+    color: #A78B80;
+    margin-bottom: 1.5rem;
+}
+
+.select-plan {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #FAD353;
+    color: #443F35;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.select-plan:hover {
+    background-color: #F3E6B8;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .plan {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .plans {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .plan {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 2rem;
+    }
+    
+    .plan h3 {
+        font-size: 1.5rem;
+    }
+    
+    .select-plan {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+}
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F7F6EF;
+    color: #443F35;
+}
+
+.ai-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #443F35;
+    margin-bottom: 1rem;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    color: #A78B80;
+    margin-bottom: 2rem;
+}
+
+.charts-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.chart-card {
+    background-color: #F3E6B8;
+    border-radius: 10px;
+    padding: 2rem;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.chart-card canvas {
+    width: 100%;
+    max-width: 250px;
+    margin-bottom: 1rem;
+}
+
+.chart-card p {
+    font-size: 1.1rem;
+    color: #443F35;
+}
+
+@media (max-width: 1024px) {
+    .chart-card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .charts-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .chart-card {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 2rem;
+    }
+    
+    .chart-card p {
+        font-size: 1rem;
+    }
+}
+/* Colors based on the palette */
+:root {
+  --dark-brown: #443f35;
+  --yellow: #fad353;
+  --beige: #f3e6b8;
+  --light-cream: #f7f6ef;
+  --brownish-gray: #a78b80;
+}
+
+/* General Body Styles */
+body {
+  font-family: 'Poppins', sans-serif; /* Child-friendly font */
+  background-color: var(--light-cream);
+  margin: 0;
+  padding: 0;
+}
+
+.personalized-learning-arc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+  background-color: var(--yellow);
+  text-align: center;
+}
+
+.logo-section {
+  margin-bottom: 20px;
+}
+
+.logo {
+  max-width: 150px;
+}
+
+.text-content h1 {
+  color: var(--dark-brown);
+  font-size: 2.5em;
+  margin-bottom: 15px;
+}
+
+.text-content p {
+  color: var(--brownish-gray);
+  font-size: 1.2em;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.progress-charts {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 40px 0;
+}
+
+.chart {
+  text-align: center;
+}
+
+.pie-chart {
+  width: 150px;
+  height: 150px;
+  background-color: var(--light-cream);
+  border-radius: 50%;
+  margin: 10px auto;
+}
+
+.chart h3 {
+  color: var(--dark-brown);
+  margin-bottom: 10px;
+}
+
+.buttons {
+  margin-top: 30px;
+}
+
+.action-btn {
+  background-color: var(--dark-brown);
+  color: var(--light-cream);
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 10px;
+  font-size: 1.1em;
+}
+
+.action-btn:hover {
+  background-color: var(--beige);
+  color: var(--dark-brown);
+}
