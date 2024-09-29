@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartStart - Decode Mental Disabilities</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <script src="https://cdn.botpress.cloud/webchat/v2.1/inject.js"></script>
+<script src="https://mediafiles.botpress.cloud/0222917b-9dbd-4202-8a45-e5a54b876f3d/webchat/v2.1/config.js"></script>
+
+    <header>
+        <div class="logo">
+            <img src="https://i.ibb.co/B32B5N4/Screenshot-2024-09-28-191638.png" alt="SmartStart Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#games">Games</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="intro">
+            <h1>Unlock Learning with Fun!</h1>
+            <p>SmartStart uses engaging games to help decode mental disabilities like dyslexia and ADHD for children aged 3-13.</p>
+            <img src="https://i.ibb.co/1MK4hwH/Screenshot-2024-09-28-191814.png" alt="Learning Game Image">
+        </section>
+
+        <section id="games">
+            <h2>Our Games</h2>
+            <div class="game-container">
+                <div class="game-card">
+                    <i class="fas fa-pencil-alt"></i>
+                    <h3>Writing Game</h3>
+                    <p>Improve handwriting skills and writing clarity through interactive fun exercises.</p>
+                </div>
+
+                <div class="game-card">
+                    <i class="fas fa-book"></i>
+                    <h3>Reading Game</h3>
+                    <p>Enhance reading abilities using challenges that make reading enjoyable for young minds.</p>
+                </div>
+
+                <div class="game-card">
+                    <i class="fas fa-microphone"></i>
+                    <h3>Phonological Test</h3>
+                    <p>Test and strengthen phonological awareness through engaging audio-based activities.</p>
+                </div>
+              <div class="buttons">
+        <a href="https://youtube.com" class="action-btn"> COME LET'S PLAY</a>
+        
+      </div>
+            </div>
+        </section>
+    </main>
+
+  
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartStart Games Section</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="games-section">
+        <h2>Unlock Your Child's Potential</h2>
+        <p class="tagline">Using fun and engaging games to decode mental disabilities like dyslexia, ADHD, and more in children aged 3-13.</p>
+        <div class="plans">
+            <div class="plan">
+                <h3>Results</h3>
+                <p>Get real-time insights into your child's progress.</p>
+                <a class="select-plan">Explore Results</a>
+            </div>
+            <div class="plan">
+                <h3>Know Your Child</h3>
+                <p>Personalized assessments to understand your child's strengths and challenges.</p>
+                <a class="select-plan">Start Assessment</a>
+            </div>
+            <div class="plan">
+                <h3>What to Do</h3>
+                <p>Guidance and resources to help your child thrive.</p>
+                <a class="select-plan">Get Recommendations</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartStart AI Section</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <section class="ai-section">
+        <h2>How AI Personalizes Your Child's Learning Path</h2>
+        <p class="tagline">AI-driven assessments provide insights into your child's learning, detecting potential challenges in reading, writing, and cognitive games.</p>
+
+        <div class="charts-container">
+            <div class="chart-card">
+                <canvas id="readingChart"></canvas>
+                <p>Reading Score</p>
+            </div>
+            <div class="chart-card">
+                <canvas id="writingChart"></canvas>
+                <p>Writing Score</p>
+            </div>
+            <div class="chart-card">
+                <canvas id="gameChart"></canvas>
+                <p>Game Performance</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Pie Chart for Reading Score
+        const ctxReading = document.getElementById('readingChart').getContext('2d');
+        const readingChart = new Chart(ctxReading, {
+            type: 'pie',
+            data: {
+                labels: ['Comprehension', 'Fluency', 'Speed'],
+                datasets: [{
+                    label: 'Reading Score',
+                    data: [40, 30, 30],
+                    backgroundColor: ['#FAD353', '#A78B80', '#F3E6B8']
+                }]
+            }
+        });
+
+        // Pie Chart for Writing Score
+        const ctxWriting = document.getElementById('writingChart').getContext('2d');
+        const writingChart = new Chart(ctxWriting, {
+            type: 'pie',
+            data: {
+                labels: ['Grammar', 'Creativity', 'Accuracy'],
+                datasets: [{
+                    label: 'Writing Score',
+                    data: [35, 40, 25],
+                    backgroundColor: ['#443F35', '#FAD353', '#A78B80']
+                }]
+            }
+        });
+
+        // Pie Chart for Game Performance
+        const ctxGame = document.getElementById('gameChart').getContext('2d');
+        const gameChart = new Chart(ctxGame, {
+            type: 'pie',
+            data: {
+                labels: ['Cognitive', 'Problem Solving', 'Reaction'],
+                datasets: [{
+                    label: 'Game Score',
+                    data: [45, 35, 20],
+                    backgroundColor: ['#FAD353', '#443F35', '#F3E6B8']
+                }]
+            }
+        });
+    </script>
+</body>
+</html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartStart - Personalized Learning Arc</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <section class="personalized-learning-arc">
+    <div class="content-wrapper">
+      <!-- SmartStart Logo -->
+      <div class="logo-section">
+        <img src="https://i.ibb.co/B32B5N4/Screenshot-2024-09-28-191638.png" alt="SmartStart Logo" class="logo">
+      </div>
+
+      <!-- Title and Description -->
+      <div class="text-content">
+        <h1>See your child's personalized learning arc</h1>
+        <p>At SmartStart, we analyze game performance to create a personalized learning arc for your child, helping identify learning challenges such as dyslexia and ADHD.</p>
+      </div>
+
+      <!-- Student Progress (Example Pie Charts) -->
+      <div class="progress-charts">
+        <div class="chart">
+          <h3>Reading Score</h3>
+          <div class="pie-chart" id="reading-chart"></div>
+        </div>
+        <div class="chart">
+          <h3>Writing Score</h3>
+          <div class="pie-chart" id="writing-chart"></div>
+        </div>
+        <div class="chart">
+          <h3>Game Performance</h3>
+          <div class="pie-chart" id="game-chart"></div>
+        </div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="buttons">
+        <a href="https://character.ai/chat/YR5akYzs7I3O1bP-4E9QJv8ZVaWre81AFHG71voSaj0" class="action-btn">GENERATE THE LEARNING ARC</a>
+        
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Plan Generator</title>
+</head>
+<body>
+    <h2>Study Plan Generator</h2>
+    <label for="name">Enter your name:</label>
+    <input type="text" id="name" required>
+    <br><br>
+    <label for="age">Enter your age:</label>
+    <input type="number" id="age" required>
+    <br><br>
+    <button id="generatePlan">Generate Study Plan</button>
+    <br><br>
+    <div id="output"></div>
+
+    <script src="studyPlan.js"></script>
+</body>
+</html>
