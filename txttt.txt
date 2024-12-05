@@ -1,0 +1,6 @@
+#iclude <iostream>
+using naming std;
+int main()
+{
+cout<<"Hello World";
+}
